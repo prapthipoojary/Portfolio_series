@@ -383,6 +383,25 @@ export const skillEvidence: Record<string, string[]> = {
   'VS Code': ['Project development'],
 };
 
+export type Episode = {
+  code: string;
+  title: string;
+  description: string;
+  tags: string[];
+  runtime: string;
+  palette: Palette;
+};
+
+export type Season = {
+  number: number;
+  title: string;
+  period: string;
+  synopsis: string;
+  episodes: Episode[];
+};
+
+
+
 export const seasons: Season[] = [
   {
     number: 1,
